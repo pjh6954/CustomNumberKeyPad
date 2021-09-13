@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72A95EA426EF1FE7001FD983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A95EA326EF1FE7001FD983 /* AppDelegate.swift */; };
+		72A95EA626EF1FE7001FD983 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A95EA526EF1FE7001FD983 /* SceneDelegate.swift */; };
+		72A95EA826EF1FE7001FD983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A95EA726EF1FE7001FD983 /* ViewController.swift */; };
+		72A95EAB26EF1FE7001FD983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A95EA926EF1FE7001FD983 /* Main.storyboard */; };
+		72A95EAD26EF1FE9001FD983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A95EAC26EF1FE9001FD983 /* Assets.xcassets */; };
+		72A95EB026EF1FE9001FD983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A95EAE26EF1FE9001FD983 /* LaunchScreen.storyboard */; };
+		72A95EEB26EF307D001FD983 /* NumberPadFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A95EE826EF3064001FD983 /* NumberPadFramework.framework */; };
+		72A95EEC26EF307D001FD983 /* NumberPadFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72A95EE826EF3064001FD983 /* NumberPadFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72A95EE726EF3064001FD983 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72A95EE226EF3064001FD983 /* NumberPadFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 72A95EC126EF20ED001FD983;
+			remoteInfo = NumberPadFramework;
+		};
+		72A95EE926EF3064001FD983 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72A95EE226EF3064001FD983 /* NumberPadFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 72A95ECA26EF20ED001FD983;
+			remoteInfo = NumberPadFrameworkTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72A95EED26EF307D001FD983 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				72A95EEC26EF307D001FD983 /* NumberPadFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		72A95EA026EF1FE7001FD983 /* CustomNumberKeyPadExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomNumberKeyPadExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A95EA326EF1FE7001FD983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72A95EA526EF1FE7001FD983 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		72A95EA726EF1FE7001FD983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72A95EAA26EF1FE7001FD983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72A95EAC26EF1FE9001FD983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72A95EAF26EF1FE9001FD983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72A95EB126EF1FE9001FD983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72A95EE226EF3064001FD983 /* NumberPadFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NumberPadFramework.xcodeproj; path = ../../NumberPadFramework/NumberPadFramework.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72A95E9D26EF1FE7001FD983 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A95EEB26EF307D001FD983 /* NumberPadFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72A95E9726EF1FE7001FD983 = {
+			isa = PBXGroup;
+			children = (
+				72A95EE126EF3049001FD983 /* Frameworks */,
+				72A95EA226EF1FE7001FD983 /* CustomNumberKeyPadExample */,
+				72A95EA126EF1FE7001FD983 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72A95EA126EF1FE7001FD983 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72A95EA026EF1FE7001FD983 /* CustomNumberKeyPadExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72A95EA226EF1FE7001FD983 /* CustomNumberKeyPadExample */ = {
+			isa = PBXGroup;
+			children = (
+				72A95EA326EF1FE7001FD983 /* AppDelegate.swift */,
+				72A95EA526EF1FE7001FD983 /* SceneDelegate.swift */,
+				72A95EA726EF1FE7001FD983 /* ViewController.swift */,
+				72A95EA926EF1FE7001FD983 /* Main.storyboard */,
+				72A95EAC26EF1FE9001FD983 /* Assets.xcassets */,
+				72A95EAE26EF1FE9001FD983 /* LaunchScreen.storyboard */,
+				72A95EB126EF1FE9001FD983 /* Info.plist */,
+			);
+			path = CustomNumberKeyPadExample;
+			sourceTree = "<group>";
+		};
+		72A95EE126EF3049001FD983 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72A95EE226EF3064001FD983 /* NumberPadFramework.xcodeproj */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		72A95EE326EF3064001FD983 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72A95EE826EF3064001FD983 /* NumberPadFramework.framework */,
+				72A95EEA26EF3064001FD983 /* NumberPadFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72A95E9F26EF1FE7001FD983 /* CustomNumberKeyPadExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72A95EB426EF1FE9001FD983 /* Build configuration list for PBXNativeTarget "CustomNumberKeyPadExample" */;
+			buildPhases = (
+				72A95E9C26EF1FE7001FD983 /* Sources */,
+				72A95E9D26EF1FE7001FD983 /* Frameworks */,
+				72A95E9E26EF1FE7001FD983 /* Resources */,
+				72A95EED26EF307D001FD983 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomNumberKeyPadExample;
+			productName = CustomNumberKeyPadExample;
+			productReference = 72A95EA026EF1FE7001FD983 /* CustomNumberKeyPadExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72A95E9826EF1FE7001FD983 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					72A95E9F26EF1FE7001FD983 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 72A95E9B26EF1FE7001FD983 /* Build configuration list for PBXProject "CustomNumberKeyPadExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72A95E9726EF1FE7001FD983;
+			productRefGroup = 72A95EA126EF1FE7001FD983 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 72A95EE326EF3064001FD983 /* Products */;
+					ProjectRef = 72A95EE226EF3064001FD983 /* NumberPadFramework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				72A95E9F26EF1FE7001FD983 /* CustomNumberKeyPadExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		72A95EE826EF3064001FD983 /* NumberPadFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NumberPadFramework.framework;
+			remoteRef = 72A95EE726EF3064001FD983 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		72A95EEA26EF3064001FD983 /* NumberPadFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NumberPadFrameworkTests.xctest;
+			remoteRef = 72A95EE926EF3064001FD983 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72A95E9E26EF1FE7001FD983 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A95EB026EF1FE9001FD983 /* LaunchScreen.storyboard in Resources */,
+				72A95EAD26EF1FE9001FD983 /* Assets.xcassets in Resources */,
+				72A95EAB26EF1FE7001FD983 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72A95E9C26EF1FE7001FD983 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A95EA826EF1FE7001FD983 /* ViewController.swift in Sources */,
+				72A95EA426EF1FE7001FD983 /* AppDelegate.swift in Sources */,
+				72A95EA626EF1FE7001FD983 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		72A95EA926EF1FE7001FD983 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A95EAA26EF1FE7001FD983 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72A95EAE26EF1FE9001FD983 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A95EAF26EF1FE9001FD983 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72A95EB226EF1FE9001FD983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72A95EB326EF1FE9001FD983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72A95EB526EF1FE9001FD983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 235CHBTAW4;
+				INFOPLIST_FILE = CustomNumberKeyPadExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junho.develop.CustomNumberKeyPadExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72A95EB626EF1FE9001FD983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 235CHBTAW4;
+				INFOPLIST_FILE = CustomNumberKeyPadExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junho.develop.CustomNumberKeyPadExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72A95E9B26EF1FE7001FD983 /* Build configuration list for PBXProject "CustomNumberKeyPadExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A95EB226EF1FE9001FD983 /* Debug */,
+				72A95EB326EF1FE9001FD983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72A95EB426EF1FE9001FD983 /* Build configuration list for PBXNativeTarget "CustomNumberKeyPadExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A95EB526EF1FE9001FD983 /* Debug */,
+				72A95EB626EF1FE9001FD983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72A95E9826EF1FE7001FD983 /* Project object */;
+}
