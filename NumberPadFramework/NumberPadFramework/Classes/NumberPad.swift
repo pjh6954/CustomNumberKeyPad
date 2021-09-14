@@ -89,6 +89,8 @@ public class NumberPad: UIView {
     /// Backspace가 있는경우, 해당 버튼의 Background color:
     public var backSpaceBackgroundColor : UIColor = .lightGray { didSet { self.updateElementsSetting() } }
     public var backSpaceColor : UIColor? { didSet { self.updateElementsSetting() } }
+    // TODO: Image Size edit
+    /// 이미지 사이즈가 좀 작은 관계로 넣어둔 코드. 차후 큰 사이즈 이미지로 교체하면 없에버릴 예정
     public var backSpaceImageEdgeInsets: UIEdgeInsets = UIEdgeInsets(top: 60, left: 60, bottom: 60, right: 60) { didSet { self.updateElementsSetting() } }
     /// Done버튼이 존재하는 경우, 해당 버튼의 Background Color
     public var doneBackgroundColor : UIColor = .blue { didSet { self.updateElementsSetting() } }
@@ -267,9 +269,6 @@ public class NumberPad: UIView {
                 btn.setImage(self.loadIcon(name: "ClearSymbolFilledIcon"), for: .normal)
                 uiview.backgroundColor = self.backSpaceBackgroundColor
                 btn.tintColor = self.backSpaceColor ?? self.padButtonsTextColor
-                // btn.contentEdgeInsets = .init(top: 50, left: 50, bottom: 50, right: 50)
-                // btn.imageEdgeInsets = .init(top: -100, left: -100, bottom: -100, right: -100)
-                // btn.imageView?.contentMode = .scaleToFill
                 btn.contentVerticalAlignment = .fill
                 btn.contentHorizontalAlignment = .fill
                 btn.imageEdgeInsets = self.backSpaceImageEdgeInsets
@@ -281,13 +280,14 @@ public class NumberPad: UIView {
                 btn.titleLabel?.font = self.doneFont ?? self.padButtonsTextFont
                 break
             case .Hide:
-                btn.setImage(self.loadIcon(name: "ClearSymbolIcon"), for: .normal)
-                btn.setTitle("HIDE", for: .normal)
+                btn.setImage(self.loadIcon(name: "DismissKeyboard"), for: .normal)
+                // btn.setTitle("HIDE", for: .normal)
                 var bgColor = self.padButtonsBackgroundColor
                 if let color = self.hideBackgroundColor {
                     bgColor = color
                 }
                 uiview.backgroundColor = bgColor
+                btn.tintColor = self.hideColor ?? self.padButtonsTextColor
                 break
             case .Others( _):
                 btn.setTitle("OTHERS", for: .normal)
