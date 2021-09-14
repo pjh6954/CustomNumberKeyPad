@@ -8,7 +8,7 @@
 import UIKit
 
 public protocol NumberPadDelegate: AnyObject {
-    
+    func padBtnTouchEvent(_ sender: UIButton, str: String)
 }
 public enum NoneStringCases {
     // Img
@@ -272,12 +272,14 @@ public class NumberPad: UIView {
                 btn.contentVerticalAlignment = .fill
                 btn.contentHorizontalAlignment = .fill
                 btn.imageEdgeInsets = self.backSpaceImageEdgeInsets
+                btn.addTarget(self, action: #selector(actionBtnBackspace(_:)), for: .touchUpInside)
                 break
             case .Done:
                 btn.setTitle("DONE", for: .normal)
                 uiview.backgroundColor = self.doneBackgroundColor
                 btn.setTitleColor(self.doneColor ?? self.padButtonsTextColor, for: .normal)
                 btn.titleLabel?.font = self.doneFont ?? self.padButtonsTextFont
+                btn.addTarget(self, action: #selector(actionBtnDone(_:)), for: .touchUpInside)
                 break
             case .Hide:
                 btn.setImage(self.loadIcon(name: "DismissKeyboard"), for: .normal)
@@ -288,9 +290,11 @@ public class NumberPad: UIView {
                 }
                 uiview.backgroundColor = bgColor
                 btn.tintColor = self.hideColor ?? self.padButtonsTextColor
+                btn.addTarget(self, action: #selector(actionBtnHide(_:)), for: .touchUpInside)
                 break
             case .Others( _):
                 btn.setTitle("OTHERS", for: .normal)
+                btn.addTarget(self, action: #selector(actionBtnOthers(_:)), for: .touchUpInside)
                 break
             }
             break
@@ -309,23 +313,31 @@ public class NumberPad: UIView {
 
 extension NumberPad {
     @objc private func actionBtnStr(_ sender: UIButton) {
-        NSLog("\(#function)")
+        NSLog("\(#function) :: \(sender.tag)")
+        if self.displayType == .defaultType {
+            guard defaultButtonsStr.count > sender.tag else {
+                return
+            }
+            if case .StringType(let str) = defaultButtonsStr[sender.tag] {
+                self.delegate?.padBtnTouchEvent(sender, str: str)
+            }
+        }
     }
     
     @objc private func actionBtnBackspace(_ sender: UIButton) {
-        NSLog("\(#function)")
+        NSLog("\(#function) :: \(sender.tag)")
     }
     
     @objc private func actionBtnDone(_ sender: UIButton) {
-        NSLog("\(#function)")
+        NSLog("\(#function) :: \(sender.tag)")
     }
     
     @objc private func actionBtnHide(_ sender: UIButton) {
-        NSLog("\(#function)")
+        NSLog("\(#function) :: \(sender.tag)")
     }
     
     @objc private func actionBtnOthers(_ sender: UIButton){
-        NSLog("\(#function)")
+        NSLog("\(#function) :: \(sender.tag)")
     }
 }
 

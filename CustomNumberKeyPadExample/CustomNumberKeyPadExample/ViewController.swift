@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     private func setView() {
         self.textField.delegate = self
         let numberpad = NumberPad(frame: .init(x: 0, y: 0, width: self.view.bounds.width, height: 250))
+        numberpad.delegate = self
         numberpad.containerBackgroundColor = .gray
         numberpad.containerTopBottomMargin = 3
         numberpad.containerLeadTrailMargin = 3
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
         self.btnChecker.addTarget(self, action: #selector(actionBtnChecker(_:)), for: .touchUpInside)
         
         let newTempPad = NumberPad(frame: .zero)
+        newTempPad.delegate = self
         newTempPad.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(newTempPad)
         newTempPad.containerBackgroundColor = .gray
@@ -76,3 +78,8 @@ extension ViewController: UITextFieldDelegate {
     }
 }
 
+extension ViewController : NumberPadDelegate {
+    func padBtnTouchEvent(_ sender: UIButton, str: String) {
+        NSLog("PAD BTN CALLBACK :: \(str)")
+    }
+}
